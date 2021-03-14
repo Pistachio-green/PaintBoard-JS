@@ -27,7 +27,6 @@ body {
 }
 
 .jsCurrent .current {
-    
     width:130px;
     background-color: white;
     text-align: center;
@@ -38,12 +37,10 @@ body {
     border:2px solid rgba(0,0,0,0.2);
 }
 .jsCurrent .current__Color{
-    
     width:40px;
     height:40px;
     border-radius: 100%;
     margin-left: 20px;
-
 }
 
 .controls {
