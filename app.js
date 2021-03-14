@@ -4,8 +4,10 @@ const colors = document.getElementsByClassName("jsColor");
 const range = document.getElementById("jsRange");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
+const current = document.getElementsByClassName("current__Color");
 const INITIAL_COLOR = "#2c2c2c";
 const CANVAS_SIZE = 700;
+
 
 canvas.width = CANVAS_SIZE;
 canvas.height = CANVAS_SIZE; 
@@ -44,6 +46,7 @@ function handleColorClick(event) {
     const color = event.target.style.backgroundColor;
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
+    current[0].style.backgroundColor = ctx.strokeStyle;
 }
 
 function handleRangeChange(event){
